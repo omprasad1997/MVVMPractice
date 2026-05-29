@@ -68,9 +68,11 @@ dependencies {
 
     implementation(libs.androidx.activity.ktx)
 
+
     implementation(libs.viewmodel.ktx)
     implementation(libs.runtime.ktx)
     implementation(libs.androidx.lifecycle.livedata.ktx)
+//    implementation(libs.android.arch.lifecycle)
 //    implementation(libs.android.arch.lifecycle)
 
     //glide & retrofit
@@ -87,4 +89,17 @@ dependencies {
 
     //browser
     implementation(libs.androidx.browser)
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-core:5.7.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    testImplementation("androidx.arch.core:core-testing:2.2.0")
+
+
+    // Instrumented testing dependencies (Add these)
+    androidTestImplementation("org.mockito:mockito-android:5.7.0")
+    androidTestImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
+    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+    androidTestImplementation("androidx.arch.core:core-testing:2.2.0")
 }
