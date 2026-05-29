@@ -10,7 +10,7 @@ class MovieRepository @Inject constructor(private val apiService: OMDBAPIService
     suspend fun searchMovies(searchTerm: String): MovieResponse {
 
         val movieResponse = apiService.searchMovies(searchTerm)
-        Log.d(ApiConstants.TAG, "MovieRepository ${movieResponse.Search[0].Title}")
+        Log.d(ApiConstants.TAG, "MovieRepository ${movieResponse.Search[0].Title}" )
         return movieResponse
     }
 }
